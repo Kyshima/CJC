@@ -29,10 +29,9 @@ public class Player : MonoBehaviour
 
         // Verifica se pode mover em, e move-se
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
-        Debug.Log(hit.collider);
         if(hit.collider == null) transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
 
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.x), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x,0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if(hit.collider == null) transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);
     }
 }

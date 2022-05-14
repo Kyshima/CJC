@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door_0
+      name: dungeontileset-extended_0
       rect:
         serializedVersion: 2
         x: 185
@@ -460,7 +460,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -468,6 +468,804 @@ TextureImporter:
       bones: []
       spriteID: 15005f0d8c0c5484ba67f21f67237866
       internalID: 857648452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upper_ladder
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 912
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.50819445, y: 0.45082474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff669ae53e11f274ab133f985b4da52e
+      internalID: 1038818391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963d0a2c0c15fac4791af1005a821979
+      internalID: -2146748693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd633c637c6be2d4ead79f6617046c24
+      internalID: 578018108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cdd8c3c53bef941be9e2abd165ecaf
+      internalID: 1530605077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d451469a37bb07546845bb69de6c346f
+      internalID: 720728361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9475523216037d94b87266a3cca0655c
+      internalID: -502543153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e9081f0adabcb4eb0dcf83e55e4bd3
+      internalID: -739201420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 935
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8214de664e2974fb5b27df2c96613f
+      internalID: 755408212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stairs_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 935
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee08b18acf5489b4bb7fe1e9ed52e6e1
+      internalID: 1949436635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421045b9316345c47bee3dbb0eaeac61
+      internalID: -892317615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moss_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 976
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d9fbcac1ef2a84890da87d266f620a
+      internalID: -1347486998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f595bbb60916e48b906818b56e6a51
+      internalID: -319655694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3247f84730aef4a930588a8c65f516
+      internalID: -1839598883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085b3c4ff5034ef43a96290d27516e18
+      internalID: 1147974594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fc0a0791be1ed418408e883b3be5e8
+      internalID: 544020577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4589c250f78c948a8afc9bb377f894
+      internalID: -224162175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdb9149c8b275c4dbca58cc5110d0b2
+      internalID: 753302027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75de8b4ae31f5b547ae7e0e0b6492840
+      internalID: -1604393195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0867cc5ee1e814a8adf10e5fd8842b
+      internalID: 1560714689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_base
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 642
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aed3e0d7240cb44a41be755cdbb286
+      internalID: -65162669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b167f4efa7a05e74d89e18486f41bd92
+      internalID: 1848688778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97576bb418de9864881661119cfc0c9f
+      internalID: 294477925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d697779d2f12be34da333c760a26cef8
+      internalID: -1602280502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1c3cf804a37ed41bdbd44556edc3d5
+      internalID: -2074461953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcce3dc87880d3e4d8f10d8eeb3272a4
+      internalID: 1006346849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2eef8d65156a44f8c059553e97b4a4
+      internalID: 557394406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6cf5e5276570041a6e6d55bf31f634
+      internalID: -983593731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torch_top_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff479089a1bd37043b6e568017a8cc5a
+      internalID: -2003061665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5786a54bfe4a7a448b4028cd2356c523
+      internalID: 1257990548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8621edb2c5c7e24f9ede316bc204b86
+      internalID: -2027621855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43caec1ba635ba9428808e81bf8d5429
+      internalID: 972264607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133c5fc9992967c47b008cc26274f376
+      internalID: 778058977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 656
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b090f921be0d34587c0a03986df8c2
+      internalID: -1006041545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 656
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4972d93e6b107c447aca22af8b593e73
+      internalID: -281217423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 688
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4403bd4fe9a004c4ab7df7d8ef4030ac
+      internalID: -831356282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 672
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b664b75bcffc046b520bf51a601c6a
+      internalID: -1021309944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeontileset-extended_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 633
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6e5715cffed0c408500bbd77eb7bef
+      internalID: 1224019318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white_rug_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 736
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a599bc734424beb428d4ac75fed6a9b0
+      internalID: -1993389245
       vertices: []
       indices: 
       edges: []
@@ -485,22 +1283,59 @@ TextureImporter:
     nameFileIdTable:
       rug_3: -50533750
       door_1: 459117147
-      rug_2: -1298688979
-      rug_5: 1462760184
+      moss_7: -892317615
+      moss_5: -739201420
+      gunk_5: -224162175
+      torch_top_2: 294477925
+      white_rug_9: 1771424135
+      torch_top_7: -983593731
       stairs_1: -926627114
-      rug_7: 1745645948
       rug_1: 1144100441
       door_3: -1464664390
-      door_2: 1054149684
+      gunk_8: 1560714689
+      torch_top_6: 557394406
+      white_rug_7: -831356282
       rug_6: -1963271324
-      rug_8: 360078781
-      door_0: 989869443
-      stairs_2: -893650591
+      gunk_7: 680895731
+      torch_top_8: -2003061665
       rug_9: -603840334
-      Top: -417615859
+      dungeontileset-extended_0: 989869443
+      moss_6: -502543153
       rug_4: -1894008818
-      dungeontileset-extended_1: 646289386
+      white_rug_3: 972264607
+      dungeontileset-extended_1: -1021309944
       center_tile: -454013547
+      white_rug_1: 1257990548
+      torch_base: -65162669
+      rug_2: -1298688979
+      rug_5: 1462760184
+      gunk_4: 544020577
+      rug_7: 1745645948
+      gunk_1: -319655694
+      gunk_6: 753302027
+      moss_4: 720728361
+      torch_top_3: -1602280502
+      moss_9: -1347486998
+      white_rug_6: -281217423
+      door_2: 1054149684
+      white_rug_2: -2027621855
+      white_rug_5: -1006041545
+      gunk_2: -1839598883
+      rug_8: 360078781
+      gunk_3: 1147974594
+      torch_top_1: 1848688778
+      stairs_2: -893650591
+      Top: -417615859
+      moss_3: 1530605077
+      torch_top_4: -2074461953
+      stairs_3: -1054418989
+      moss_2: 578018108
+      white_rug_4: 778058977
+      stairs_4: 1949436635
+      upper_ladder: 1038818391
+      torch_top_5: 1006346849
+      white_rug_8: -1021309944
+      moss_1: -2146748693
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

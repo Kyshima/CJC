@@ -1279,7 +1279,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1300,7 +1300,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1308,6 +1308,27 @@ TextureImporter:
       bones: []
       spriteID: 00eb68a83a33cfa4b905d2cf3441758e
       internalID: -817966097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 784
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95698612a4029ea459786f6074a46cc5
+      internalID: 1226869081
       vertices: []
       indices: 
       edges: []
@@ -1341,6 +1362,7 @@ TextureImporter:
       rug_6: -1963271324
       gunk_7: 680895731
       torch_top_8: -2003061665
+      door_4: 1226869081
       rug_9: -603840334
       dungeontileset-extended_0: 989869443
       moss_6: -502543153

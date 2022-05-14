@@ -139,5 +139,6 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   sceneNames:
-  - Tester
   - D1
+  - D2
+  - D3

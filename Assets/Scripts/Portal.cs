@@ -11,7 +11,7 @@ public class Portal : Collidable
 
     protected override void OnCollide(Collider2D col)
     {
-        if(col.name == "Player")
+        if(Input.GetKeyDown(KeyCode.F) && col.name == "Player")
         {
             GameManager.instance.SaveState();
             string SceneName = sceneNames[new System.Random().Next(0,sceneNames.Length)];

@@ -6,8 +6,8 @@ public class Enemy : Mover
 {
     public int xp=1;
 
-    public float triggerLenght=1;
-    public float chaselenght=5;
+    public float triggerLenght=0.5f;
+    public float chaselenght=1.5f;
     private bool chasing;
     private bool collidingWithPlayer;
     private Transform playerTransform;
@@ -20,6 +20,9 @@ public class Enemy : Mover
     protected override void Start()
     {
         base.Start();
+        this.xSpeed = 0.3f;
+        this.ySpeed = 0.3f;
+        this.hp=hp/3;
         playerTransform = GameObject.Find("Player").transform;
         startingPosition = transform.position;
         hitbox = GetComponent<BoxCollider2D>();

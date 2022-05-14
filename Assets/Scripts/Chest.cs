@@ -16,7 +16,7 @@ public class Chest : Collectable
             int money = new System.Random().Next(1,10);
             collected = true;
             GetComponent<SpriteRenderer>().sprite = empty;
-            Debug.Log(money);
+            GameManager.instance.ShowText("+" + money + " coins", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
         }
     }
 }

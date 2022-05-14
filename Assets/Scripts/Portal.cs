@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
+
 public class Portal : Collidable
 {
     public string[] sceneNames;
@@ -12,6 +13,7 @@ public class Portal : Collidable
     {
         if(col.name == "Player")
         {
+            GameManager.instance.SaveState();
             string SceneName = sceneNames[new System.Random().Next(0,sceneNames.Length)];
             SceneManager.LoadScene(SceneName);
         }

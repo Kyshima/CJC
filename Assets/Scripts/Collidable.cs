@@ -29,6 +29,6 @@ public class Collidable : MonoBehaviour
 
     protected virtual void OnCollide(Collider2D col) 
     {
-        Debug.Log(col.name);
+        Debug.Log("Isto ainda nao foi imprementado em: " + col.name);
     }
 }

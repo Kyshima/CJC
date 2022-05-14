@@ -1258,7 +1258,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1266,6 +1266,48 @@ TextureImporter:
       bones: []
       spriteID: a599bc734424beb428d4ac75fed6a9b0
       internalID: -1993389245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1008
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb91995fc1c90354d8bb8e7f0ee4acf7
+      internalID: -250599966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunk_10
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00eb68a83a33cfa4b905d2cf3441758e
+      internalID: -817966097
       vertices: []
       indices: 
       edges: []
@@ -1290,6 +1332,7 @@ TextureImporter:
       white_rug_9: 1771424135
       torch_top_7: -983593731
       stairs_1: -926627114
+      gunk_9: -250599966
       rug_1: 1144100441
       door_3: -1464664390
       gunk_8: 1560714689
@@ -1308,6 +1351,7 @@ TextureImporter:
       white_rug_1: 1257990548
       torch_base: -65162669
       rug_2: -1298688979
+      gunk_10: -817966097
       rug_5: 1462760184
       gunk_4: 544020577
       rug_7: 1745645948

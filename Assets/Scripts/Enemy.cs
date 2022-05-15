@@ -61,4 +61,10 @@ public class Enemy : Mover
             hits[i]=null;
         } 
     }
+    protected override void Death()
+    {
+        Destroy(gameObject);
+        GameManager.instance.xp += xp;
+        GameManager.instance.ShowText("+" + xp + " xp", 20, Color.green, transform.position, Vector3.up * 40, 1.0f);
+    }
 }

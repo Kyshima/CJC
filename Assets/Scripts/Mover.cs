@@ -25,6 +25,12 @@ public abstract class Mover : Fighter
         if(moveDelta.x > 0) transform.localScale = Vector3.one;
         else if(moveDelta.x < 0) transform.localScale = new Vector3(-1,1,1);
 
+        // Adiciona Knockback, se houver
+        moveDelta += PushDirection;
+
+        // Reduz a forca do knockback por frame, baseado no recovery speed
+        PushDirection = Vector3.Lerp(PushDirection, Vector3.zero, pushRecovery);
+        
         // Verifica se pode mover em, e move-se
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if(hit.collider == null) transform.Translate(0, moveDelta.y * Time.deltaTime, 0);

@@ -9,7 +9,7 @@ public class Chest : Collectable
 
     protected override void OnCollide(Collider2D col)
     {
-        if(Input.GetKeyDown(KeyCode.F) && !collected && col.name == "Player")
+        if(Input.GetKeyDown(KeyCode.F) && !collected && col.name == "PlayerCollider")
         {
             int money = new System.Random().Next(1,10);
             collected = true;

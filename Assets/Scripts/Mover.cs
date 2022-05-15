@@ -30,7 +30,7 @@ public abstract class Mover : Fighter
 
         // Reduz a forca do knockback por frame, baseado no recovery speed
         PushDirection = Vector3.Lerp(PushDirection, Vector3.zero, pushRecovery);
-
+        
         // Verifica se pode mover em, e move-se
         hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0,moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if(hit.collider == null) transform.Translate(0, moveDelta.y * Time.deltaTime, 0);

@@ -61,7 +61,6 @@ public class Enemy : Mover
             hits[i]=null;
         } 
     }
-
     protected override void Death()
     {
         Destroy(gameObject);

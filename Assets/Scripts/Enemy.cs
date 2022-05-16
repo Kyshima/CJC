@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Enemy : Mover
 {
-    public int xp=1;
-
     public float triggerLenght=0.5f;
     public float chaselenght=1.5f;
     private bool chasing;
@@ -63,6 +61,7 @@ public class Enemy : Mover
     }
     protected override void Death()
     {
+        int xp = Random.Range(10, 15);
         Destroy(gameObject);
         GameManager.instance.xp += xp;
         GameManager.instance.ShowText("+" + xp + " xp", 20, Color.green, transform.position, Vector3.up * 40, 1.0f);

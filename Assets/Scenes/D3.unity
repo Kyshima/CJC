@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest
       objectReference: {fileID: 0}
+    - target: {fileID: 5963823139611075153, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5963823139611075154, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5270,6 +5274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5963823139611075153, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5963823139611075154, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7095,26 +7103,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -2, y: -15, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 1, y: -15, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 9, y: -15, z: 0}
     second:
       serializedVersion: 2
@@ -7150,6 +7138,26 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 2
       m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -2, y: -14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 1, y: -14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -8783,10 +8791,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 33998c964d33baf4bbf1535340077022, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: a31bf4e63824d1349a8d0f22f006453f, type: 2}
-  - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: 0626ce7cfb3ff7e4db366e0b75e32b47, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: 83a1f4f3347cfd646a05f9de051d4aa1, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f7a7ae69a8c5a124e9fccfdea39497dc, type: 2}
   - m_RefCount: 1
@@ -8798,10 +8806,10 @@ Tilemap:
     m_Data: {fileID: -454013547, guid: b24007405f1aa984b91a01469b116bb7, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 857648452, guid: b24007405f1aa984b91a01469b116bb7, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: 21300000, guid: 5c698d13a451b55459021cbbab5293d8, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 21300000, guid: b31113403b4945348baa21593becbc73, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 0fc58f0db1c35e547844c809438d0004, type: 3}
   - m_RefCount: 1
@@ -12619,6 +12627,10 @@ PrefabInstance:
     - target: {fileID: 5963823139611075153, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
       propertyPath: m_Name
       value: Chest (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963823139611075153, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5963823139611075154, guid: 42a34e5cb344c8f448ab89538ab85e80, type: 3}
       propertyPath: m_RootOrder

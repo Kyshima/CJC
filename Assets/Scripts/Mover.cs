@@ -13,7 +13,9 @@ public abstract class Mover : Fighter
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        if(gameObject.name == "Player")
+        boxCollider = gameObject.transform.Find("PlayerCollider").GetComponent<BoxCollider2D>();
+        else boxCollider = GetComponent<BoxCollider2D>();
     }
 
     protected virtual void UpdateMotor(Vector3 input)

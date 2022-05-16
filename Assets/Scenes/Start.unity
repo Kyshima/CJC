@@ -2929,7 +2929,6 @@ GameObject:
   - component: {fileID: 945224495}
   - component: {fileID: 945224494}
   - component: {fileID: 945224493}
-  - component: {fileID: 945224496}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2954,7 +2953,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 9.999985, y: 10.000006}
+  m_AnchoredPosition: {x: 10, y: 10}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &945224493
@@ -3051,18 +3050,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 945224491}
   m_CullTransparentMesh: 1
---- !u!114 &945224496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945224491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed69527f40432e44b93e2317177026fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1059556029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +3188,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059556029}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b36190b085fcb204d85658f6a725a628, type: 2}
   m_CullingMode: 0
@@ -4023,6 +4010,7 @@ GameObject:
   - component: {fileID: 1422400292}
   - component: {fileID: 1422400291}
   - component: {fileID: 1422400293}
+  - component: {fileID: 1422400294}
   m_Layer: 9
   m_Name: Princesa
   m_TagString: Untagged
@@ -4123,6 +4111,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13943511, y: 0.15129252}
   m_EdgeRadius: 0
+--- !u!95 &1422400294
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422400290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 013560fdf0a660c4fae076fe967ff821, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1459054723
 GameObject:
   m_ObjectHideFlags: 0
@@ -5658,7 +5666,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1920237997}
   - component: {fileID: 1920237999}
-  - component: {fileID: 1920238000}
   - component: {fileID: 1920237998}
   m_Layer: 5
   m_Name: FloatingTextManager
@@ -5709,18 +5716,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920237996}
   m_CullTransparentMesh: 1
---- !u!114 &1920238000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920237996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed69527f40432e44b93e2317177026fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1927235469
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    //Reference to Scripts
+    public Player player;
+
     public void Awake()
     {
         if(GameManager.instance != null)
@@ -26,8 +29,7 @@ public class GameManager : MonoBehaviour
     public List<int> weaponPrice;
     public List<int> xpTable;
 
-    //Reference to Scripts
-    public Player player;
+    
     //public Weapon weapon;
 
     public FloatingTextManager floatingTextManager;
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
         money = int.Parse(data[1]);
         xp = int.Parse(data[2]);
 
-        SceneManager.sceneLoaded -= LoadState;
-        Debug.Log("LoadState");
+        GameObject.Find("Player").transform.position = GameObject.Find("Spawn").transform.position;
+
     }
 }

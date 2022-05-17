@@ -26,16 +26,16 @@ public class GameManager : MonoBehaviour
     //Resources
     public List<Sprite> playerSprite;
     public List<Sprite> weaponSprite;
+    public List<int> weaponPrice;
     public List<int> xpTable;
 
     
-    
+    //public Weapon weapon;
 
     public FloatingTextManager floatingTextManager;
 
     //Code
     public Player player;
-    public Weapon weapon;
     public int money;
     public int xp;
 
@@ -43,16 +43,7 @@ public class GameManager : MonoBehaviour
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
         floatingTextManager.Show(msg,fontSize,color,position,motion,duration);
     }
-
-    public void Upgrade()
-    {
-        weapon.UpgradeWeapon();
-    }
-    public void Downgrade()
-    {
-        weapon.DowngradeWeapon();
-    }
-
+    
     public void SaveState()
     {
         string s = "";
@@ -60,7 +51,6 @@ public class GameManager : MonoBehaviour
         s += "0" + "|";
         s += money.ToString() + "|";
         s += xp.ToString() + "|";
-        s += weapon.weaponLevel.ToString();
         s += "0";
 
         PlayerPrefs.SetString("SaveState", s);
@@ -76,7 +66,6 @@ public class GameManager : MonoBehaviour
 
         money = int.Parse(data[1]);
         xp = int.Parse(data[2]);
-        weapon.weaponLevel = int.Parse(data[3]);
 
         GameObject.Find("Player").transform.position = GameObject.Find("Spawn").transform.position;
 

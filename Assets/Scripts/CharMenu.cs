@@ -11,8 +11,6 @@ public class CharMenu : MonoBehaviour
 
     public void UpdateMenu()
     {
-        weaponSprite.sprite = GameManager.instance.weaponSprite[GameManager.instance.weapon.weaponLevel];
-
         levelText.text = "Nao Implementado";
         hitpointText.text = GameManager.instance.player.hp.ToString();
         moneyText.text = GameManager.instance.money.ToString();

@@ -1728,10 +1728,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1059556032}
-  playerSprite: []
-  weaponSprite: []
-  weaponPrice: 
+  weaponSprite:
+  - {fileID: 21300000, guid: f624b4edea1df6049aaff832f0cf59f9, type: 3}
+  - {fileID: 21300000, guid: fa2b5a1dc40d498489796cae47ee6bbb, type: 3}
+  - {fileID: 21300000, guid: 7c7c5c7e47d18634ca11db740a0a913d, type: 3}
+  - {fileID: 21300000, guid: 4667d06ad0d65d64baffbafa7d19642b, type: 3}
+  - {fileID: 21300000, guid: 475385a8112c2c64681bd46f4c5906bf, type: 3}
+  - {fileID: 21300000, guid: 577e3f50082afb04caf6009433c1b447, type: 3}
+  - {fileID: 21300000, guid: 8f2f610c931895d419bfcf825bb832b7, type: 3}
   xpTable: 
+  weapon: {fileID: 941164636}
   floatingTextManager: {fileID: 1920237998}
   money: 0
   xp: 0
@@ -3203,8 +3209,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  dmg: 1
-  pushForce: 2
+  dmg: 
+  pushForce: []
   weaponLevel: 0
 --- !u!61 &941164637
 BoxCollider2D:

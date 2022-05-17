@@ -5,11 +5,13 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     private Animator anim;
+    private CharMenu charMenu;
     private bool showing = false;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        charMenu = gameObject.GetComponent<CharMenu>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class Menu : MonoBehaviour
             if (!showing)
             {
                 anim.SetTrigger("show");
+                charMenu.UpdateMenu();
                 showing = true;
             }
             else

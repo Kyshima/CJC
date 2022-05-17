@@ -4800,10 +4800,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  playerSprite: []
   weaponSprite: []
-  weaponPrice: 
   xpTable: 
+  weapon: {fileID: 0}
+  deathAnim: {fileID: 0}
   floatingTextManager: {fileID: 493488225}
   money: 0
   xp: 0

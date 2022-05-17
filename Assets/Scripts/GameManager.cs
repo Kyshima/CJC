@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     //Reference to Scripts
     public Player player;
+    
 
     public void Awake()
     {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     
     public Weapon weapon;
-
+    public Animator deathAnim;
     public FloatingTextManager floatingTextManager;
 
     //Code
@@ -49,6 +50,13 @@ public class GameManager : MonoBehaviour
     public void Downgrade()
     {
         weapon.DowngradeWeapon();
+    }
+
+    public void Respawn()
+    {
+        deathAnim.SetTrigger("Hide");
+        SceneManager.LoadScene("Start");
+        player.Respawn();
     }
 
     public void SaveState()
@@ -77,6 +85,5 @@ public class GameManager : MonoBehaviour
         weapon.weaponLevel = int.Parse(data[3]);
 
         GameObject.Find("Player").transform.position = GameObject.Find("Spawn").transform.position;
-
     }
 }

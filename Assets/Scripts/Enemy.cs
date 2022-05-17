@@ -32,25 +32,32 @@ public class Enemy : Mover
 
     private void FixedUpdate()
     {
-        if (Vector3.Distance(playerTransform.position, startingPosition) < chaselenght)
+        if (playerTransform != null)
         {
-            if(Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
-                chasing = true;
-
-            if (chasing)
+            if (Vector3.Distance(playerTransform.position, startingPosition) < chaselenght)
             {
-                animator.SetBool("run",true);
-                if (!collidingWithPlayer)
+                if (Vector3.Distance(playerTransform.position, startingPosition) < triggerLenght)
+                    chasing = true;
+
+                if (chasing)
                 {
-                    UpdateMotor((playerTransform.position - transform.position).normalized);
+                    animator.SetBool("run", true);
+                    if (!collidingWithPlayer)
+                    {
+                        UpdateMotor((playerTransform.position - transform.position).normalized);
+                    }
                 }
-            } else {
-                UpdateMotor(startingPosition - transform.position);
+                else
+                {
+                    UpdateMotor(startingPosition - transform.position);
+                }
             }
-        } else {
-            UpdateMotor(startingPosition - transform.position);
-            chasing = false;
-            animator.SetBool("run",false);
+            else
+            {
+                UpdateMotor(startingPosition - transform.position);
+                chasing = false;
+                animator.SetBool("run", false);
+            }
         }
 
         collidingWithPlayer = false;

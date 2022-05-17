@@ -13,10 +13,27 @@ public class CharMenu : MonoBehaviour
     {
         weaponSprite.sprite = GameManager.instance.weaponSprite[GameManager.instance.weapon.weaponLevel];
 
-        levelText.text = "Nao Implementado";
+        levelText.text = GameManager.instance.getLevel().ToString();
         hitpointText.text = GameManager.instance.player.hp.ToString();
         moneyText.text = GameManager.instance.money.ToString();
 
-        xpBar.localScale = new Vector3(0.5f, 0, 0);
+
+        int currLevel = GameManager.instance.getLevel();
+        if(currLevel == GameManager.instance.xpTable.Count)
+        {
+            xpBar.localScale = Vector3.one;
+        }
+        else
+        {
+            int prevLevelXp = GameManager.instance.getXPLevel(currLevel - 1);
+            int currLevelXp = GameManager.instance.getXPLevel(currLevel);
+
+            int diff = currLevelXp - prevLevelXp;
+            int currXpIntoLevel = GameManager.instance.xp - prevLevelXp;
+
+            float completion = (float)currXpIntoLevel / (float) diff;
+            xpBar.localScale = new Vector3(completion, 0, 0);
+        }
+        
     }
 }

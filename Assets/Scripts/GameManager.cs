@@ -58,11 +58,11 @@ public class GameManager : MonoBehaviour
         s += "0" + "|";
         s += money.ToString() + "|";
         s += xp.ToString() + "|";
-        s += weapon.weaponLevel.ToString();
+        s += weapon.weaponLevel.ToString() + "|";
         s += "0";
 
         PlayerPrefs.SetString("SaveState", s);
-        Debug.Log("SaveState");
+        //Debug.Log("SaveState");
     }
 
     public void LoadState(Scene s, LoadSceneMode mode)

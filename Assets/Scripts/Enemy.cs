@@ -6,6 +6,8 @@ public class Enemy : Mover
 {
     public float triggerLenght=0.5f;
     public float chaselenght=1.5f;
+    public float speed;
+
     private bool chasing;
     private bool collidingWithPlayer;
     private Transform playerTransform;
@@ -15,15 +17,17 @@ public class Enemy : Mover
     public ContactFilter2D filter;
     private Collider2D[] hits=new Collider2D[10];
 
+    protected Animator animator;
+
     protected override void Start()
     {
         base.Start();
-        this.xSpeed = 0.3f;
-        this.ySpeed = 0.3f;
-        this.hp=hp/3;
+        this.xSpeed = speed;
+        this.ySpeed = speed;
         playerTransform = GameObject.Find("Player").transform;
         startingPosition = transform.position;
         hitbox = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -35,6 +39,7 @@ public class Enemy : Mover
 
             if (chasing)
             {
+                animator.SetBool("run",true);
                 if (!collidingWithPlayer)
                 {
                     UpdateMotor((playerTransform.position - transform.position).normalized);
@@ -45,6 +50,7 @@ public class Enemy : Mover
         } else {
             UpdateMotor(startingPosition - transform.position);
             chasing = false;
+            animator.SetBool("run",false);
         }
 
         collidingWithPlayer = false;

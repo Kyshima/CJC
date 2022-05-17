@@ -3209,8 +3209,15 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  dmg: 
-  pushForce: []
+  dmg: 01000000020000000300000004000000050000000600000007000000
+  pushForce:
+  - 2
+  - 2
+  - 2
+  - 2
+  - 4
+  - 4
+  - 4
   weaponLevel: 0
 --- !u!61 &941164637
 BoxCollider2D:

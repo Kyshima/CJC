@@ -10,6 +10,7 @@ public class Player : Mover
     protected override void Start()
     {
         base.Start();
+        this.hp=10;
         SpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }

@@ -5,8 +5,8 @@ using System;
 
 public class Fighter : MonoBehaviour
 {
-    public int hp=10;
-    public float pushRecovery = 0.2f;
+    public int hp;
+    public float pushRecovery;
 
     protected float immunity = 1.0f;
     protected float lastImmune;

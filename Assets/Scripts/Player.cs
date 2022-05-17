@@ -8,11 +8,9 @@ public class Player : Mover
 
     protected override void Start()
     {
-        GameManager.instance.player = this;
         base.Start();
         SpriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     private void FixedUpdate()
     {
         float x = Input.GetAxisRaw("Horizontal");

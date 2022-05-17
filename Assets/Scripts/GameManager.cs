@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     //Reference to Scripts
-    
+    public Player player;
 
     public void Awake()
     {
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public FloatingTextManager floatingTextManager;
 
     //Code
-    public Player player;
+
     public int money;
     public int xp;
 

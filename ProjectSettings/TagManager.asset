@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fighter
   - SP
+  - Spawn
   layers:
   - Default
   - TransparentFX

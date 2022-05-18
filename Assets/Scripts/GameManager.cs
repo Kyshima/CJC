@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     //Reference to Scripts
     public Player player;
+    public bool fight = true;
 
     public int floor;
 
@@ -81,7 +82,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathAnim.SetTrigger("Hide");
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Start_D");
         player.Respawn();
     }
 

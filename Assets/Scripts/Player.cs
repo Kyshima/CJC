@@ -43,7 +43,8 @@ public class Player : Mover
     {
         isAlive = false;
         GameManager.instance.deathAnim.SetTrigger("Dead");
-        Destroy(gameObject);
+        GameManager.instance.fight = false;
+        //Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -71,6 +72,7 @@ public class Player : Mover
         GameManager.instance.player.hpMax = MaxhpStart;
         GameManager.instance.SaveState();
         isAlive = true;
+        GameManager.instance.fight = true;
     }
 
     

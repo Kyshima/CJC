@@ -43,7 +43,6 @@ public class Player : Mover
 
         if(oLVL != GameManager.instance.getLevel()) {
             hpMax++;
-            Debug.Log("MHP - " + hpMax);
             oLVL = GameManager.instance.getLevel();
         }
     }

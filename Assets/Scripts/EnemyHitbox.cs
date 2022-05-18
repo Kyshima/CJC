@@ -9,10 +9,11 @@ public class EnemyHitbox : Collidable
 
     protected override void OnCollide(Collider2D col){
         if(col.tag == "Fighter" && col.name == "Player"){
-            Damage d = new Damage{origin=transform.position, damageAmount=dmg, pushForce=pushForce};
+            Damage d = new Damage{origin=transform.position, damageAmount=(int)(dmg + GameManager.instance.getLevel()*0.45), pushForce=pushForce};
             col.SendMessage("ReceiveDamage", d);
         }
     }
 
     
 }
+    

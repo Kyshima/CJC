@@ -55,7 +55,7 @@ public class Player : Mover
         GameManager.instance.weapon.weaponLevel = 0;
         GameManager.instance.player.hp = MaxhpStart;
         GameManager.instance.player.hpMax = MaxhpStart;
-        GameManager.instance=null;
+        //GameManager.instance=null;
         GameManager.instance.SaveState();
         isAlive = true;
     }

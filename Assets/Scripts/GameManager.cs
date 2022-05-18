@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
 
     //Reference to Scripts
     public Player player;
-    
+
+    public int floor;
 
     public void Awake()
     {

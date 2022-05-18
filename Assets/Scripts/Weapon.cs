@@ -48,7 +48,8 @@ public class Weapon : Collidable
     }
 
     private void Swing(){
-        animator.SetTrigger("Swing");
+        if(GameManager.instance.fight)
+            animator.SetTrigger("Swing");
     }
 
     public void UpgradeWeapon()

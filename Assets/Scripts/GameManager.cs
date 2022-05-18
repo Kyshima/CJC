@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     //Reference to Scripts
     public Player player;
+    public bool fight=true;
 
     public int floor;
 

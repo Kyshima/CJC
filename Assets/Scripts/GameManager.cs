@@ -29,16 +29,13 @@ public class GameManager : MonoBehaviour
     public List<Sprite> weaponSprite;
     public List<int> xpTable;
 
-    
     public Weapon weapon;
     public Animator deathAnim;
     public FloatingTextManager floatingTextManager;
 
     //Code
-
     public int money;
     public int xp;
-
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
         floatingTextManager.Show(msg,fontSize,color,position,motion,duration);

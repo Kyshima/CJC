@@ -8,12 +8,12 @@ public class Player : Mover
     private Animator animator;
     private bool isAlive = true;
     private int MaxhpStart = 15;
+    private int oLVL;
 
     protected override void Start()
     {
         base.Start();
-        //hpMax = 15;
-        //this.hp=hpMax;
+        oLVL = GameManager.instance.getLevel();
         SpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
@@ -40,6 +40,12 @@ public class Player : Mover
         else animator.ResetTrigger("Run");
 
         if(isAlive) UpdateMotor(new Vector3(x,y,0));
+
+        if(oLVL != GameManager.instance.getLevel()) {
+            hpMax++;
+            Debug.Log("MHP - " + hpMax);
+            oLVL = GameManager.instance.getLevel();
+        }
     }
 
     public void Respawn()

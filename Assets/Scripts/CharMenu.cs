@@ -32,7 +32,7 @@ public class CharMenu : MonoBehaviour
             int currXpIntoLevel = GameManager.instance.xp - prevLevelXp;
 
             float completion = (float)currXpIntoLevel / (float) diff;
-            xpBar.GetComponent<RectTransform>().sizeDelta = new Vector2(400*completion, 15);
+            xpBar.GetComponent<RectTransform>().sizeDelta = new Vector2(400*completion, 14);
         }
         
     }

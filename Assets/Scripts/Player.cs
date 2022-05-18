@@ -25,8 +25,8 @@ public class Player : Mover
     protected override void Death()
     {
         isAlive = false;
-        Destroy(gameObject);
         GameManager.instance.deathAnim.SetTrigger("Dead");
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()

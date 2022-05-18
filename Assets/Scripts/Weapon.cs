@@ -9,6 +9,7 @@ public class Weapon : Collidable
 
     public int weaponLevel = 0;
     private SpriteRenderer sprite;
+    private Sprite newSprite;
 
     private Animator animator;
     private float cooldown = 0.5f;
@@ -20,6 +21,8 @@ public class Weapon : Collidable
         base.Start();
         //sprite = GameManager.instance.weaponSprite[weaponLevel];
         sprite = GetComponent<SpriteRenderer>();
+        newSprite = GameManager.instance.weaponSprite[weaponLevel];
+        sprite.sprite = newSprite;
         animator = GetComponent<Animator>();
     }
 

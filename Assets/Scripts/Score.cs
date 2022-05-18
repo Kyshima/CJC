@@ -5,17 +5,10 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Text moneyText;
-    public void Points()
-    {
-        moneyText.text = GameManager.instance.money.ToString();
-    }    
+    public Text moneyText;   
     public void Update()
     {
         moneyText.text = GameManager.instance.money.ToString();
-        //Debug.Log(moneyText.text);
-        
-        //Points();
     }
     
 }

@@ -52,6 +52,34 @@ public class GameManager : MonoBehaviour
         weapon.DowngradeWeapon();
     }
 
+    public int getLevel()
+    {
+        int r = 0;
+        int add = 0;
+
+        while(xp >= add)
+        {
+            add += xpTable[r];
+            r++;
+
+            if (r == xpTable.Count) return r;
+        }
+        return r;   
+    }
+
+    public int getXPLevel(int level)
+    {
+        int r = 0;
+        int exp = 0;
+
+        while (r < level)
+        {
+            exp += xpTable[r];
+            r++;
+        }
+        return exp;
+    }
+
     public void Respawn()
     {
         deathAnim.SetTrigger("Hide");

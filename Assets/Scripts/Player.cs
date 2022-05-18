@@ -42,7 +42,11 @@ public class Player : Mover
 
     public void Respawn()
     {
-        this.hp = 10;
+        GameManager.instance.xp = 0;
+        GameManager.instance.money = 0;
+        GameManager.instance.weapon.weaponLevel = 0;
+        GameManager.instance.player.hp = 10;
+        GameManager.instance.SaveState();
         isAlive = true;
     }
 

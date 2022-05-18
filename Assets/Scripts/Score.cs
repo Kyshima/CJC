@@ -10,4 +10,12 @@ public class Score : MonoBehaviour
     {
         moneyText.text = GameManager.instance.money.ToString();
     }    
+    public void Update()
+    {
+        moneyText.text = GameManager.instance.money.ToString();
+        Debug.Log(moneyText.text);
+        
+        //Points();
+    }
+    
 }

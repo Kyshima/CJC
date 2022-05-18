@@ -22,13 +22,29 @@ public class Player : Mover
     protected override void ReceiveDamage(Damage dmg)
     {
         if (!isAlive) return;
-        base.ReceiveDamage(dmg);
+        if (Time.time - lastImmune > immunity)
+        {
+            lastImmune = Time.time;
+            hp -= dmg.damageAmount;
+            PushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
+
+            // Mostrar Dano no Ecra
+
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), new System.Random().Next(18, 35), Color.red, transform.position, Vector3.zero, 0.5f);
+
+            if (hp <= 0)
+            {
+                hp = 0;
+                Death();
+            }
+        }
     }
 
     protected override void Death()
     {
         isAlive = false;
         GameManager.instance.deathAnim.SetTrigger("Dead");
+        GameManager.instance.fight = false;
         //Destroy(gameObject);
     }
 
@@ -58,6 +74,7 @@ public class Player : Mover
         GameManager.instance=null;
         GameManager.instance.SaveState();
         isAlive = true;
+        GameManager.instance.fight = true;
     }
 
     

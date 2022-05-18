@@ -22,11 +22,12 @@ public class Fighter : MonoBehaviour
             PushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
 
             // Mostrar Dano no Ecra
-            GameManager.instance.ShowText(dmg.damageAmount.ToString(), new System.Random().Next(18,35), Color.red, transform.position, Vector3.zero, 0.5f);
+
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), new System.Random().Next(18,35), Color.magenta, transform.position, Vector3.zero, 0.5f);
 
             if(hp<=0){
                 hp=0;
-                Death();
+                Death();    
             }
         }
     }

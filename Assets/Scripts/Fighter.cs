@@ -5,6 +5,7 @@ using System;
 
 public class Fighter : MonoBehaviour
 {
+    public int hpMax;
     public int hp;
     public float pushRecovery;
 

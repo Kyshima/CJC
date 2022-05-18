@@ -7,11 +7,13 @@ public class Player : Mover
     private SpriteRenderer SpriteRenderer;
     private Animator animator;
     private bool isAlive = true;
+    private int MaxhpStart = 15;
 
     protected override void Start()
     {
         base.Start();
-        this.hp=10;
+        //hpMax = 15;
+        //this.hp=hpMax;
         SpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
@@ -45,7 +47,8 @@ public class Player : Mover
         GameManager.instance.xp = 0;
         GameManager.instance.money = 0;
         GameManager.instance.weapon.weaponLevel = 0;
-        GameManager.instance.player.hp = 10;
+        GameManager.instance.player.hp = MaxhpStart;
+        GameManager.instance.player.hpMax = MaxhpStart;
         GameManager.instance.SaveState();
         isAlive = true;
     }

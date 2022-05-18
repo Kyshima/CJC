@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
         string s = "";
 
         s += "0" + "|";
+        s += player.hp.ToString() + "|";
         s += money.ToString() + "|";
         s += xp.ToString() + "|";
         s += weapon.weaponLevel.ToString() + "|";
@@ -109,9 +110,10 @@ public class GameManager : MonoBehaviour
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
-        money = int.Parse(data[1]);
-        xp = int.Parse(data[2]);
-        weapon.weaponLevel = int.Parse(data[3]);
+        player.hp = int.Parse(data[1]);
+        money = int.Parse(data[2]);
+        xp = int.Parse(data[3]);
+        weapon.weaponLevel = int.Parse(data[4]);
 
         GameObject.Find("Player").transform.position = GameObject.Find("Spawn").transform.position;
     }

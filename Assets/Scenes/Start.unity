@@ -3639,8 +3639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95144f91c1e92f3459fddc472409ef8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
-  pushRecovery: 0.5
+  hpMax: 15
+  hp: 15
+  pushRecovery: 0.2
 --- !u!61 &1059556033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7818,6 +7819,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8086177923183510004, guid: 4e85934bf4650d14996333c21b0aadc4, type: 3}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 1059556032}
     - target: {fileID: 8086177923183510004, guid: 4e85934bf4650d14996333c21b0aadc4, type: 3}
       propertyPath: sceneNames.Array.size
       value: 1

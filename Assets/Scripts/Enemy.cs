@@ -8,6 +8,8 @@ public class Enemy : Mover
     public float chaselenght=1.5f;
     public float speed;
 
+    public int starterHp;
+
     private bool chasing;
     private bool collidingWithPlayer;
     private Transform playerTransform;
@@ -28,6 +30,8 @@ public class Enemy : Mover
         startingPosition = transform.position;
         hitbox = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+
+        hp = (int)((GameManager.instance.getLevel() + starterHp) * 1.3);
     }
 
     private void FixedUpdate()
@@ -62,15 +66,15 @@ public class Enemy : Mover
 
         collidingWithPlayer = false;
         boxCollider.OverlapCollider(filter, hits);
-        for (int i=0; i<hits.Length; i++)
+        for (int i = 0; i < hits.Length; i++)
         {
             if (hits[i] == null)
                 continue;
 
-            if(hits[i].tag == "Fighter" && hits[i].name == "Player") collidingWithPlayer = true; 
+            if (hits[i].tag == "Fighter" && hits[i].name == "Player") collidingWithPlayer = true;
 
-            hits[i]=null;
-        } 
+            hits[i] = null;
+        }   
     }
     protected override void Death()
     {

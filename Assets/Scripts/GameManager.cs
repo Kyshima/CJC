@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathAnim.SetTrigger("Hide");
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Start_D");
         player.Respawn();
     }
 

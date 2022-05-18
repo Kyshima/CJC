@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : Mover
@@ -28,7 +29,7 @@ public class Player : Mover
     {
         isAlive = false;
         GameManager.instance.deathAnim.SetTrigger("Dead");
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -54,6 +55,7 @@ public class Player : Mover
         GameManager.instance.weapon.weaponLevel = 0;
         GameManager.instance.player.hp = MaxhpStart;
         GameManager.instance.player.hpMax = MaxhpStart;
+        GameManager.instance=null;
         GameManager.instance.SaveState();
         isAlive = true;
     }

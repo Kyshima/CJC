@@ -14,7 +14,7 @@ public abstract class Mover : Fighter
     protected virtual void Start()
     {
         if(gameObject.name == "Player")
-        boxCollider = gameObject.transform.Find("PlayerCollider").GetComponent<BoxCollider2D>();
+        boxCollider = GameObject.Find("PlayerCollider").GetComponent<BoxCollider2D>();
         else boxCollider = GetComponent<BoxCollider2D>();
     }
 

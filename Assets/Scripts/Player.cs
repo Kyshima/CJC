@@ -72,7 +72,6 @@ public class Player : Mover
         GameManager.instance.weapon.UpdateSprite();
         GameManager.instance.player.hp = MaxhpStart;
         GameManager.instance.player.hpMax = MaxhpStart;
-        GameManager.instance=null;
         GameManager.instance.SaveState();
         isAlive = true;
         GameManager.instance.fight = true;

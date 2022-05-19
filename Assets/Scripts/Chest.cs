@@ -18,7 +18,7 @@ public class Chest : Collectable
             {
                 if (GameManager.instance.weapon.weaponLevel == 0)
                 {
-                    GameManager.instance.ShowText("Oopsie, Downgrade has failed :c", 25, Color.green, transform.position, Vector3.up * 50, 3.0f);
+                    GameManager.instance.ShowText("Oopsie, A arma não pode ficar pior :c", 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
                 }
                 else
                 {
@@ -30,18 +30,18 @@ public class Chest : Collectable
             {
                 if (GameManager.instance.weapon.weaponLevel == 6)
                 {
-                    GameManager.instance.ShowText("Congrats, you're already on the top!", 25, Color.red, transform.position, Vector3.up * 50, 3.0f);
+                    GameManager.instance.ShowText("Parabéns, a arma está totalmente evoluída c:", 25, Color.green, transform.position, Vector3.up * 50, 3.0f);
                 }
                 else
                 {
                     GameManager.instance.Upgrade();
-                    GameManager.instance.ShowText("Upgraded :D", 25, Color.cyan, transform.position, Vector3.up * 50, 3.0f);
+                    GameManager.instance.ShowText("Upgraded!", 25, Color.cyan, transform.position, Vector3.up * 50, 3.0f);
                 }
             }
             else
             {
                 int money = new System.Random().Next(1, 10);
-                GameManager.instance.ShowText("+" + money + " coins", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
+                GameManager.instance.ShowText("+" + money + " moedas", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
                 GameManager.instance.money += money;
             }
         }

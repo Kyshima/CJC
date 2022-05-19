@@ -69,6 +69,7 @@ public class Player : Mover
         GameManager.instance.xp = 0;
         GameManager.instance.money = 0;
         GameManager.instance.weapon.weaponLevel = 0;
+        GameManager.instance.weapon.UpdateSprite();
         GameManager.instance.player.hp = MaxhpStart;
         GameManager.instance.player.hpMax = MaxhpStart;
         GameManager.instance=null;

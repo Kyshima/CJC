@@ -48,7 +48,7 @@ public class Weapon : Collidable
     }
 
     private void Swing(){
-        animator.SetTrigger("Swing");
+        if(GameManager.instance.fight) animator.SetTrigger("Swing");
     }
 
     public void UpgradeWeapon()
@@ -60,6 +60,11 @@ public class Weapon : Collidable
     public void DowngradeWeapon()
     {
         weaponLevel--;
+        sprite.sprite = GameManager.instance.weaponSprite[weaponLevel];
+    }
+
+    public void UpdateSprite()
+    {
         sprite.sprite = GameManager.instance.weaponSprite[weaponLevel];
     }
 }

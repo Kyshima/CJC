@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Player : Mover
@@ -71,6 +72,7 @@ public class Player : Mover
         GameManager.instance.weapon.UpdateSprite();
         GameManager.instance.player.hp = MaxhpStart;
         GameManager.instance.player.hpMax = MaxhpStart;
+        GameManager.instance=null;
         GameManager.instance.SaveState();
         isAlive = true;
         GameManager.instance.fight = true;

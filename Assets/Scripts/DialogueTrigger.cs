@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class DialogueTrigger : Collidable
 {
+
     public Dialogue dialogue;
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        if (FindObjectOfType<DialogueManager>().reset)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+            FindObjectOfType<DialogueManager>().reset = false ;
+        }
+        else FindObjectOfType<DialogueManager>().DisplayNextSentence();
     }
 
     protected override void OnCollide(Collider2D col)

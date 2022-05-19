@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     public Text dialogueText;
     public bool final = false;
+    public bool reset = true;
 
     public Animator animator;
     // Start is called before the first frame update
@@ -15,15 +16,6 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
     }
-
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            DisplayNextSentence();
-        }
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
         //Debug.Log("Start Convo");
@@ -61,7 +53,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        
+        reset = true;
         animator.SetBool("isOpen", false);
         //Debug.Log("Acabou Dialogo");
     }
